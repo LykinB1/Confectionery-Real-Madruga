@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url(../Images/backgroundsite.avif);
+    background-size: cover;
+}
+:root{
+    --primarycolor : #ff009dfb ;
+    --secondarycolor : #4616b6fb ;
+
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+#rodape{
+    background-color: #ffec41fb;
+    
+}
+
+#cabecalho{
+    width: 100%;
+    background-color: var(--primarycolor);
+    background-position: center;
+    text-align: center;
+    color: white;
+
+}
+
+#Titulo{
+    
+    font-style: oblique;
+    font-size: 45pt;
+
+}
+
+#subtitulo{
+    margin-left: 500px;
+    font-size: 22px;
+}
+
+#banner{
+    background-size: 40px;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+    /*About Text:*/
+    background-color: var(--secondarycolor);
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+}
+#categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffec41fb;
+    gap: 250PX;
+
+}
+
+
+#catalogo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px auto;
+    text-align: center;
+
+}
+button{
+    size: 20px;
+
+}
+.produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 200px; 
+    background-color: #4616b6fb;
+    border-radius: 20px;
+    text-align: center;
+    color: aliceblue;
+    height: 300px;
+    justify-content: center;
+}
+.produtos img{
+    width: 100% ;
+    
+    
+}
