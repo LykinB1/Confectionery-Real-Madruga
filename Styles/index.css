@@ -45,10 +45,10 @@ body{
 }
 
 #banner{
-    background-size: 40px;
+    background-size: 50px;
     background-position: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     /*About Text:*/
     background-color: var(--secondarycolor);
     background-position: center;
@@ -64,8 +64,39 @@ body{
     background-color: #ffec41fb;
     gap: 250PX;
 
+    
 }
 
+.button{
+    background-color: #ff009dfb;
+    color: white;
+    border-radius: 300px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button span{
+    size: 60px;
+    position: relative;
+}
+.button::before{
+    content: "";
+    background-color: #4616b6fb;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition: width .5s, height .5s;
+}
+
+.button:hover::before{
+    width: 1000px;
+    height: 1000px;
+}
 
 #catalogo{
     width: 100%;
@@ -79,10 +110,7 @@ body{
     text-align: center;
 
 }
-button{
-    size: 20px;
 
-}
 .produtos{
     display: flex;
     flex-direction: row;
@@ -95,7 +123,9 @@ button{
     color: aliceblue;
     height: 300px;
     justify-content: center;
+    
 }
+
 .produtos img{
     width: 100% ;
     
