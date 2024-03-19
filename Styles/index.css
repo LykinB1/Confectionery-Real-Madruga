@@ -23,6 +23,12 @@ body{
     
 }
 
+#cellphone{
+    text-decoration: none;
+    color: rgb(206, 2, 2);
+    cursor: pointer;
+}
+
 #cabecalho{
     width: 100%;
     background-color: var(--primarycolor);
@@ -34,7 +40,7 @@ body{
 
 #Titulo{
     
-    font-style: oblique;
+    font-family: Whocats;
     font-size: 45pt;
 
 }
