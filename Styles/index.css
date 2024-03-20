@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Carrots;
+    src: url(../fonts/carrots/Carrots\ Free.ttf);
+}
+
+
 *{
     margin: 0%;
     padding: 0%;
@@ -10,6 +16,8 @@ body{
 :root{
     --primarycolor : #ff009dfb ;
     --secondarycolor : #4616b6fb ;
+    --primaryfont : Carrots;
+    --secondaryfont : ;
 
 }
 
@@ -35,19 +43,21 @@ body{
     background-position: center;
     text-align: center;
     color: white;
+    font-family: var(--primaryfont) ;
+    font-size: 45px;
 
 }
 
 #Titulo{
-    
-    font-family: Whocats;
-    font-size: 45pt;
-
+    font-family: var(--primaryfont);
+    font-size: 70px;
 }
 
+
 #subtitulo{
-    margin-left: 500px;
-    font-size: 22px;
+    margin-left: 550px;
+    font-size: 28px;
+    
 }
 
 #banner{
